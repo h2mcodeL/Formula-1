@@ -1,0 +1,70 @@
+<!-- Formula 1 - News App -->
+<!-- App icon image - ic_launcher, sourced from www.mercedesamgf1.com
+    Mercedes-AMG Petronas Motorsport - F1 W06 Hybrid image -->
+
+<resources>
+    <string name="app_name">Guardian Sports - F1</string>
+    <string name="info">Temporary Information</string>
+    <string name="no_internet_connection">Sorry there is no internet connection</string>
+    <string name="no_news">Sorry, No news has been found!</string>
+
+    <string name="settings_menu_item">Settings</string> <!-- this is the first item in the menu -->
+    <string name="settings_title">News Info Settings</string> <!-- this is the title for the menu setting page -->
+    <string name="about_title">About the App</string> <!-- this is the title for the about page. -->
+
+    <!-- Item within the preference list. String for Earliest Date label -->
+    <string name="settings_earliest_date_label">Earliest Date</string>
+    <string name="settings_earliest_date_key" translatable="false">min_date</string>
+    <string name="settings_earliest_date_default" translatable="false">2018-01-01</string>
+
+    <string name="settings_max_date_label">Maximum Date</string>
+    <string name="settings_max_date_key" translatable="false">max_date</string>
+    <string name="settings_max_date_default" translatable="false">2019-05-01</string>
+
+    <!-- Item within the preference list. String For OrderBy label. -->
+    <string name="settings_orderby_label">Order By</string>
+    <string name="settings_orderby_key" translatable="false">order-by</string>
+    <string name="settings_orderby_default" translatable="false">@string/settings_order_by_most_relevant_value</string>
+
+    <!-- Label for order-by-date option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_relevant_label">Relevance</string>
+    <string name="settings_order_by_most_relevant_value" translatable="false">relevance</string>
+
+    <string name="settings_order_by_date_label">Newest</string>
+    <string name="settings_order_by_date_value" translatable="false">newest</string>
+
+    <!-- Order by MOST RECENT option -->
+    <string name="settings_order_by_most_recent_label">Oldest</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">oldest</string>
+
+    <!-- Order by MAX DATE option -->
+    <string name="settings_order_by_maxdate_label">Max Date</string>
+    <string name="settings_order_by_maxdate_value" translatable="false">Max Date</string>
+
+        <string-array name="settings_order_by_labels">
+            <item>@string/settings_order_by_date_label</item>
+            <item>@string/settings_order_by_most_recent_label</item>
+            <item>@string/settings_order_by_most_relevant_label</item>
+        </string-array>
+
+        <string-array name="settings_order_by_values">
+            <item>@string/settings_order_by_date_value</item>
+            <item>@string/settings_order_by_most_recent_value</item>
+            <item>@string/settings_order_by_most_relevant_value</item>
+        </string-array>
+
+    <string name="the_date">Date:</string>
+
+    <string name="about_text">
+        Guardian Sports F1 News.
+        \n\nThis app focuses on news from the Formula One articles provided via the Guardian news API.
+        Each story is listed based on its relevance to the search. Other news is also provided where the settings filter lists
+        news loosely related to Formula One, presented where listed by date only.
+
+        \n\n<b>Formula One - New App</b>
+        \nVersion - 001 (2019-05..)
+
+        \n\nNews parsed via the Guardian Open Platform Api - https://open-platform.theguardian.com/
+    </string>
+
+</resources>

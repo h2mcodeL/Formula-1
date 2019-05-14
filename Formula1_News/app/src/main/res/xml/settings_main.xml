@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <!-- peference list items for earliest date setting-->
+    <EditTextPreference
+        android:defaultValue="@string/settings_earliest_date_default"
+        android:inputType="datetime"
+        android:key="@string/settings_earliest_date_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_earliest_date_label"
+        />
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_max_date_default"
+        android:inputType="datetime"
+        android:key="@string/settings_max_date_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_max_date_label"/>
+
+
+    <!-- preference order for setting the OrderBy setting -->
+    <ListPreference
+        android:defaultValue="@string/settings_orderby_default"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_orderby_key"
+        android:title="@string/settings_orderby_label" />
+</PreferenceScreen>
